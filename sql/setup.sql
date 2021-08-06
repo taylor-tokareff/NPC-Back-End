@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS npcs;
+CREATE TABLE npcs (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL,
+  strength INTEGER NOT NULL,
+  constitution INTEGER NOT NULL,
+  dexterity INTEGER NOT NULL,
+  intelligence INTEGER NOT NULL,
+  wisdom INTEGER NOT NULL,
+  charisma INTEGER NOT NULL,
+  race TEXT NOT NULL,
+  description TEXT NOT NULL
+);
